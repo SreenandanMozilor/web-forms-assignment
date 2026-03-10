@@ -108,7 +108,6 @@ body {
     display: flex;
     gap: 6rem;
     justify-content: center;
-    height: 15rem;
 }
 
 .card {
@@ -127,17 +126,19 @@ body {
 
 .card:hover {
     border-color: rgb(231, 54, 90);
-    transform: translateY(-10px); /* Lifts the card up slightly */
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15); /* Adds a soft shadow underneath */
+    transform: translateY(-10px); /* Lifts the card up */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15); /* Adds shadow */
 }
 
 footer {
     height: 5rem;
     width: 100%;
     background-color: black;
+    color: white;
     padding: 2rem 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .hero,
