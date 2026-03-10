@@ -70,11 +70,6 @@ body {
     border-radius: 1rem;
 }
 
-.break {
-    background-color: rgb(255, 255, 255);
-    height: 1vh;
-}
-
 .testimonials {
     width: 60%;
     max-width: 1200px;
@@ -167,4 +162,25 @@ footer {
   }
   .hero h1 { font-size: 8rem; }
   .hero h2 { font-size: 2rem; }
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-nav input { display: none; }
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.carousel-nav input:checked + .dot {
+  background: rgb(231, 54, 90);
 }
