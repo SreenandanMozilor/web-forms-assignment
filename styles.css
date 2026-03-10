@@ -233,3 +233,19 @@ footer {
   align-items: center;
   gap: 1rem;
 }
+
+.registration {
+    background-color: rgb(158, 214, 233);
+    padding: 4rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto 4rem auto;
+}
+
+.registration h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
