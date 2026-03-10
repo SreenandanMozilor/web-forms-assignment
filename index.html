@@ -153,6 +153,18 @@
 
                 <fieldset>
                     <legend>Payment Information</legend>
+
+                    <label for="cardName">Card Holder Name:</label>
+                    <input type="text" id="cardName" name="cardName" required placeholder="Sreenandan Pradeep">
+
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" inputmode="numeric" pattern="[0-9]{16}" id="cardNumber" name="cardNumber" required placeholder="1234567812345678" title="16 digit card number"><!--Browsers assume type="number" is for quantities (like choosing how many shirts to buy, or entering your age). A credit card isn't a quantity; it's just a string of characters that happen to be digits.-->
+
+                    <label for="expiryDate">Expiry Date:</label>
+                    <input type="month" id="expiryDate" name="expiryDate" required>
+
+                    <label for="cvv">CVV:</label>
+                    <input type="password" id="cvv" name="cvv" required pattern="[0-9]{3,4}" maxlength="4" placeholder="***">
                 </fieldset>
 
                 <button type="submit">Complete Registration</button>
