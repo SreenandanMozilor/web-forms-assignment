@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     background-color: black;
     padding: 1rem;
@@ -118,6 +122,13 @@ body {
     background-color: white;
     border: 0.3rem solid rgb(158, 214, 233);
     width: 25%;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: rgb(231, 54, 90);
+    transform: translateY(-10px); /* Lifts the card up slightly */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15); /* Adds a soft shadow underneath */
 }
 
 footer {
