@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(255, 255, 255);
     margin: 0;
@@ -64,39 +70,11 @@ body {
     border-radius: 1rem;
 }
 
-.break {
-    background-color: rgb(255, 255, 255);
-    height: 1vh;
-}
-
 .testimonials {
     width: 60%;
     max-width: 1200px;
     margin: 4rem auto;
     border-color: rgb(158, 214, 233);
-}
-
-.carousel {
-    overflow-x: auto;
-    display: flex;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    flex-direction: row;
-    min-height: 250px;
-    gap: 2rem;
-    border-radius: 2rem;
-}
-
-.testimonial {
-    flex: 0 0 60%;
-    border: 0.3rem solid rgb(255, 198, 209);
-    padding: 2rem;
-    border-radius: 2rem;
-    scroll-snap-align: start;
-    min-height: 250px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
 }
 
 .pricing {
@@ -131,4 +109,97 @@ footer {
     padding: 2rem 0;
     display: flex;
     justify-content: center;
+}
+
+.hero,
+.features,
+.testimonials,
+.pricing {
+    margin-bottom: 2rem;
+}
+
+/* Tablet: 768px - 1023px */
+@media (max-width: 1023px) {
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing {
+        gap: 2rem;
+    }
+}
+
+/* Mobile: up to 767px */
+@media (max-width: 767px) {
+    .feature-grid {
+        grid-template-columns: 1fr;
+        /* Single column */
+    }
+
+    .pricing {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 8rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+
+.testimonial {
+    display: none; /* Hides them by default so only the checked one shows */
+    border: 0.3rem solid rgb(255, 198, 209);
+    padding: 2rem;
+    border-radius: 2rem;
+    min-height: 250px;
+    text-align: center;
+}
+
+.carousel { position: relative; }
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+}
+
+/* Hide the actual radio buttons */
+.testimonials input[type="radio"] {
+    display: none;
+}
+
+/* Highlight the dot based on which radio button is checked */
+#s1:checked ~ .carousel-nav label[for="s1"],
+#s2:checked ~ .carousel-nav label[for="s2"],
+#s3:checked ~ .carousel-nav label[for="s3"],
+#s4:checked ~ .carousel-nav label[for="s4"] {
+    background: rgb(231, 54, 90);
+}
+
+#s1:checked ~ .carousel #t1,
+#s2:checked ~ .carousel #t2,
+#s3:checked ~ .carousel #t3,
+#s4:checked ~ .carousel #t4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
