@@ -142,3 +142,29 @@ footer {
 .hero, .features, .testimonials, .pricing {
   margin-bottom: 2rem;
 }
+
+/* Tablet: 768px - 1023px */
+@media (max-width: 1023px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pricing {
+    gap: 2rem;
+  }
+}
+
+/* Mobile: up to 767px */
+@media (max-width: 767px) {
+  .feature-grid {
+    grid-template-columns: 1fr;  /* Single column */
+  }
+  .pricing {
+    flex-direction: column;
+    height: auto;
+  }
+  .card {
+    width: 90%;
+  }
+  .hero h1 { font-size: 8rem; }
+  .hero h2 { font-size: 2rem; }
+}
