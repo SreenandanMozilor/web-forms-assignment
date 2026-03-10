@@ -132,3 +132,7 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+.hero, .features, .testimonials, .pricing {
+  margin-bottom: 2rem;
+}
