@@ -233,3 +233,79 @@ footer {
   align-items: center;
   gap: 1rem;
 }
+
+.registration {
+    background-color: rgb(158, 214, 233);
+    padding: 4rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto 4rem auto;
+}
+
+.registration h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+form fieldset {
+    background-color: white;
+    border: 3px solid rgb(255, 198, 209);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+form legend {
+    background-color: rgb(231, 54, 90); /* Brand pink */
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+form input, 
+form select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+form input:focus, 
+form select:focus {
+    outline: none;
+    border-color: rgb(231, 54, 90);
+    box-shadow: 0 0 8px rgba(231, 54, 90, 0.3);
+}
+
+form button {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(231, 54, 90);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+form button:hover {
+    background-color: black;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}

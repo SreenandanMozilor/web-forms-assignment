@@ -15,17 +15,18 @@
             <a href="#features">Features</a>
             <a href="#testimonials">Testimonials</a>
             <a href="#pricing">Pricing</a>
+            <a href="#register">Register</a> </nav>
         </nav>
     </header>
     <main>
-        <section class="hero" id = "home">
+        <section class="hero" id="home">
             <div class="container">
                 <h1>Comp</h1>
                 <h2>#Be_U</h2>
             </div>
         </section>
 
-        <section class="features" id = "features">
+        <section class="features" id="features">
             <div class="feature-grid">
                 <div class="feature">
                     Premium Materials
@@ -42,7 +43,7 @@
             </div>
         </section>
 
-        <section class="testimonials" id = "testimonials">
+        <section class="testimonials" id="testimonials">
             <!-- Radio buttons -->
             <input type="radio" name="carousel" id="s1" checked>
             <input type="radio" name="carousel" id="s2">
@@ -59,24 +60,116 @@
 
             <!-- 3. Carousel -->
             <div class="carousel">
-                <div class="testimonial" id="t1">"The fit is unreal — like it was made for me!"<br><strong>— Priya S.,
+                <div class="testimonial" id="t1">"The fit is unreal — like it was made for me!"<br><strong>— Priya S,
                         Mumbai</strong></div>
                 <div class="testimonial" id="t2">"Finally found a brand that gets Indian sizing right."<br><strong>—
-                        Arjun K., Bangalore</strong></div>
-                <div class="testimonial" id="t3">"The materials are crazy good!"<br><strong>— Riya P., Kochi</strong>
+                        Arjun K, Bangalore</strong></div>
+                <div class="testimonial" id="t3">"The materials are crazy good!"<br><strong>— Riya P, Kochi</strong>
                 </div>
-                <div class="testimonial" id="t4">"Best online fashion shopping experience ever."<br><strong>— Vikram R.,
+                <div class="testimonial" id="t4">"Best online fashion shopping experience ever."<br><strong>— Vikram R,
                         Delhi</strong></div>
             </div>
         </section>
 
-        <section class="pricing" id = "pricing">
-            <article class="card">Starter — ₹999/month<br>• 5 Outfits/month<br>• Basic Styling<br>• Free Shipping<br>[Get
+        <section class="pricing" id="pricing">
+            <article class="card">Starter — ₹999/month<br>• 5 Outfits/month<br>• Basic Styling<br>• Free
+                Shipping<br>[Get
                 Started]</article>
             <article class="card">Pro — ₹2999/month<br>• Unlimited Outfits<br>• Personalized Stylist<br>• Prioritized
                 Deliveries<br>[Get Started]</article>
             <article class="card">Elite — ₹4999/month<br>• Designer Collections<br>• 24/7 Stylist Access<br>• Express
                 Return<br>[Get Started]</article>
+        </section>
+
+        <section class="registration" id="register">
+            <h2>Register & Checkout</h2>
+            <form action="#" method="POST">
+
+                <fieldset>
+                    <legend>Account Information</legend>
+
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Sreenandan Pradeep">
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required minlength="4" placeholder="Sreenandan99">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="sreenandan@example.com">
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="4">
+
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required minlength="4">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="1234567890">
+
+                    <label for="company">Company Name (Optional):</label>
+                    <input type="text" id="company" name="company" placeholder="Comp Fashion">
+
+                    <label for="website">Website (Optional):</label>
+                    <input type="url" id="website" name="website" placeholder="https://example.com">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Billing Information</legend>
+
+                    <label for="billingName">Billing Name:</label>
+                    <input type="text" id="billingName" name="billingName" required placeholder="Savio Tomy">
+
+                    <label for="billingEmail">Billing Email:</label>
+                    <input type="email" id="billingEmail" name="billingEmail" required placeholder="savio@example.com">
+
+                    <label for="address1">Address Line 1:</label>
+                    <input type="text" id="address1" name="address1" required placeholder="123 Fashion Street">
+
+                    <label for="address2">Address Line 2 (Optional):</label>
+                    <input type="text" id="address2" name="address2" placeholder="Suite 4B">
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required placeholder="Kochi">
+
+                    <label for="state">State / Province:</label>
+                    <input type="text" id="state" name="state" required placeholder="Kerala">
+
+                    <label for="postalCode">Postal Code:</label>
+                    <input type="text" id="postalCode" name="postalCode" required placeholder="698203">
+
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="" disabled selected>Select a country</option>
+                        <option value="india">India</option>
+                        <option value="us">United States</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="canada">Canada</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment Information</legend>
+
+                    <label for="cardName">Card Holder Name:</label>
+                    <input type="text" id="cardName" name="cardName" required placeholder="Sreenandan Pradeep">
+
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" inputmode="numeric" pattern="[0-9]{16}" id="cardNumber" name="cardNumber" required placeholder="1234567812345678" title="16 digit card number"><!--Browsers assume type="number" is for quantities (like choosing how many shirts to buy, or entering your age). A credit card isn't a quantity; it's just a string of characters that happen to be digits.-->
+
+                    <label for="expiryDate">Expiry Date:</label>
+                    <input type="month" id="expiryDate" name="expiryDate" required>
+
+                    <label for="cvv">CVV:</label>
+                    <input type="password" id="cvv" name="cvv" required pattern="[0-9]{3,4}" maxlength="4" placeholder="***">
+                </fieldset>
+
+                <button type="submit">Complete Registration</button>
+            </form>
         </section>
     </main>
     <footer>
