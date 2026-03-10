@@ -249,3 +249,25 @@ footer {
     font-size: 2.5rem;
 }
 
+form fieldset {
+    background-color: white;
+    border: 3px solid rgb(255, 198, 209);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+form legend {
+    background-color: rgb(231, 54, 90); /* Brand pink */
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: left;
+}
